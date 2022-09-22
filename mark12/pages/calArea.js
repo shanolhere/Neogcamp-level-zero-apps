@@ -36,6 +36,9 @@ check1.addEventListener('click', () => {
   if(!baseVal || !heightVal){
     message1.innerHTML = "Please enter data."
   }
+  else if(baseVal<=0 || heightVal<=0){
+    message1.innerHTML = "Values must be greater than 0."
+  }
   else{
     message1.innerHTML = (baseVal * heightVal)/2
   }
@@ -58,9 +61,17 @@ check2.addEventListener('click', () => {
   if(!length1Val || !length2Val || !length3Val){
     message2.innerHTML = "Please enter data."
   }
+  else if(length1Val<=0 || length2Val<=0 || length3Val<=0){
+    message2.innerHTML = "Values must be greater than 0."
+  }
   else{
-    let s = (length1Val + length2Val + length3Val)/2;
-    message2.innerHTML = Math.sqrt(s * (s-length1Val)* (s-length2Val)* (s-length3Val))
+    if((length1Val + length2Val > length3Val) && (length2Val + length3Val > length1Val) && (length1Val + length3Val > length2Val)){
+      let s = (length1Val + length2Val + length3Val)/2;
+      message2.innerHTML = (Math.sqrt(s * (s-length1Val)* (s-length2Val)* (s-length3Val))).toFixed(2)
+    }
+    else{
+        message2.innerHTML = "Enter valid side lengths! <br/> Such that the length of one side <br/> should be less than the sum of other two sides"
+    }
   }
 })
 
@@ -80,6 +91,9 @@ check3.addEventListener('click', () => {
 
   if(!side1Val || !side2Val || !anglecVal){
     message3.innerHTML = "Please enter data."
+  }
+  else if(side1Val<=0  || side2Val<=0  || anglecVal<=0 ){
+    message3.innerHTML = "Values must be greater than 0."
   }
   else{
     message3.innerHTML = (side1Val * side2Val * Math.sin(anglecVal*Math.PI/180))/2;
