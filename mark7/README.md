@@ -1,8 +1,8 @@
-## Yoda Speak Translator - challenge
+## Minion Translator - challenge
 
-This is a Yoda Speak Translator developed and hosted at netlify.
+This is a Minion Translator developed and hosted at netlify.
 
-[Live Demo](https://yodishtalk.netlify.app/)
+[Live Demo](https://js-miniontalk.netlify.app/)
 
 
 ##### **My Social Links**
