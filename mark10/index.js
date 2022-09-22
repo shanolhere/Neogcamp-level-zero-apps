@@ -13,7 +13,7 @@ const noOfNotes = document.querySelectorAll('.noOfNotes')
 const arrayNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 nextBtn.addEventListener('click', () => {
-  if(!billAmt.value || billAmt.value<0){
+  if(!Number(billAmt.value) || Number(billAmt.value)<0){
     error.innerHTML = "Please enter bill Amount";
   }
   else{
@@ -26,7 +26,7 @@ nextBtn.addEventListener('click', () => {
 
 checkBtn.addEventListener('click', () => {
   clearNoOfNotes();
-  if(!cashReceived.value || cashReceived.value< billAmt.value){
+  if(!Number(cashReceived.value) || Number(cashReceived.value)< Number(billAmt.value)){
     error.innerHTML = "Please enter Correct Cash Amount";
   }
   else{

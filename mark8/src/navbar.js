@@ -9,6 +9,8 @@ const Navbar = () => {
           <a
             className="navbar-link active"
             href="https://github.com/shanolhere"
+            target="_blank"
+            rel="noreferrer"
           >
             Github link
           </a>

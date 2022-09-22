@@ -7,7 +7,7 @@ const result = document.querySelector('.result');
 const image = document.querySelector('.animated-gif');
 
 checkBtn.addEventListener('click', () => {
-  if(!date.value || !luckyNum){
+  if(!date.value || !luckyNum.value){
     message.innerHTML = "Please enter the data. ";
     message.style.visibility="visible";
   }

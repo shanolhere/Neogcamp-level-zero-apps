@@ -10,8 +10,11 @@ checkBtn.addEventListener('click', () => {
   if(!angle1.value || !angle2.value || !angle3.value){
     message.innerHTML = "Please enter the data."
   }
+  else if(angle1.value<=0 || angle2.value<=0 || angle3.value<=0){
+    message.innerHTML = "Please enter values greater than 0."
+  }
   else{
-    if(Number(angle1.value) + Number(angle2.value) + Number(angle3.value) === 180){
+    if(Number(angle1.value) + Number(angle2.value) + Number(angle3.value) === 180 && (Number(angle1.value)>0 && Number(angle2.value)>0 && Number(angle3.value)>0) ){
       message.innerHTML = "Yay! These angles can make a triangle!"
     }
     else{

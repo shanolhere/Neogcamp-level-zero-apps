@@ -1,8 +1,8 @@
-## Minion Speak Translator - challenge
+##  Do you know triangles?
 
-This is a Minion Speak Translator developed and hosted at netlify.
+A fun web app made using VanillaJS to learn about Triangles!
 
-[Live Demo](https://js-miniontalk.netlify.app/)
+[Live Demo](https://js-funwithtriangles.netlify.app/)
 
 
 ##### **My Social Links**
